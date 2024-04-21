@@ -1,4 +1,4 @@
-package com.merveturk.oop.polymorphism;
+package com.merveturk.oop.example2;
 
 public abstract class Doctor {
 

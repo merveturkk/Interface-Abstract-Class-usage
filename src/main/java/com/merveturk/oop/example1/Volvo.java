@@ -1,6 +1,4 @@
-package com.merveturk.oop.inheritance;
-
-import com.merveturk.oop.encapsulation.Car;
+package com.merveturk.oop.example1;
 
 public class Volvo extends Car {
 

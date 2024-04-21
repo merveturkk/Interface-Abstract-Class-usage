@@ -1,4 +1,4 @@
-package com.merveturk.oop.polymorphism;
+package com.merveturk.oop.example2;
 
 public class Main {
     public static void main(String[] args) {

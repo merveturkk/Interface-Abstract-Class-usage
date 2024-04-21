@@ -1,8 +1,4 @@
-package com.merveturk.oop.inheritance;
-
-import com.merveturk.oop.encapsulation.Car;
-import com.merveturk.oop.inheritance.Mercedes;
-import com.merveturk.oop.inheritance.Volvo;
+package com.merveturk.oop.example1;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.merveturk.oop.encapsulation;
+package com.merveturk.oop.example1;
 
 public class Car {
 
