@@ -1,20 +1,15 @@
 package com.merveturk.oop.example4;
 
-import java.sql.SQLOutput;
-
 public class TestClass{
     public static void main(String[] args) {
         Insan insan= new Insan(165,50);
         System.out.println(insan.boyCm());
         System.out.println(insan.boyMt());
-
-
-
+        System.out.println(insan.tanim());
 
 
     }
 }
-
 
 
 interface Boy {
@@ -23,13 +18,16 @@ interface Boy {
     int boyCm();
     double boyMt();
 
-    static String tanim (){
-        return  "bu interface implement eden class icin zorunlu bir metoddur.";
+    default boolean tanim(){
+       System.out.println("default tanim metodu calisti " );
+       altTanim();
+        return false;
+    }
 
+    static void altTanim (){
+        System.out.println("static tanim metodu calisti " );
     }
-    default double boyKilometre(){
-        return 20;
-    }
+
 }
 
 abstract class Hayvan implements Boy  {
@@ -82,14 +80,6 @@ class Insan extends Hayvan{
         return 2;
     }
 
-
-    static String tanim (){
-        return  "bu interface implement eden class icin zorunlu bir metoddur.";
-
-    }
-
-
-
 }
 
 
@@ -105,10 +95,6 @@ class Bina implements Boy{
         return 80;
     }
 
-    @Override // Boy interface icerisinde var olan default metodu degistirdik.
-    public double boyKilometre() {
-        return 50;
-    }
 
 }
 
